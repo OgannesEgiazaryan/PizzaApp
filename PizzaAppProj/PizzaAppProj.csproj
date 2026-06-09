@@ -8,15 +8,21 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Application\Interfaces\" />
-    <Folder Include="Application\Models\" />
-    <Folder Include="Application\Services\" />
-    <Folder Include="Domain\Entities\" />
-    <Folder Include="Domain\Enums\" />
-    <Folder Include="Infrastructure\Data\Migrations\" />
-    <Folder Include="Infrastructure\Repositories\" />
-    <Folder Include="Infrastructure\Services\" />
-    <Folder Include="Presentation\" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.6">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.6" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.6" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.4" />
+    <PackageReference Include="Spectre.Console" Version="0.50.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
