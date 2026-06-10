@@ -38,10 +38,8 @@
 
   <ItemGroup>
     <Folder Include="bin\Debug\net9.0\" />
-    <Folder Include="Infrastructure\Data\Migrations\" />
     <Folder Include="obj\Debug\net9.0\refint\" />
     <Folder Include="obj\Debug\net9.0\ref\" />
-    <Folder Include="Presentation\" />
   </ItemGroup>
 
   <ItemGroup>
